@@ -1,0 +1,12 @@
+1 lw $s0, 0($t5)
+2 add $s1, $s0, $s2
+3 addi $t0, $t1, 4
+4 or $t3, $t4, $t5
+5 sw $t0, 0($t6)
+6 end
+
+\subsubsection{Problem Definition }
+\paragraph{In a typical 5-stage MIPS processor, if there is no forwarding, we need at least two instructions between two dependent instructions to prevent data hazards}
+
+\subsubsection{Problem Solution }
+\paragraph{To find all data hazard i create two class and ı put all information of instructions into IType class and RType class in order to solve this problem and ı divide them part by part such as type,rs,rt,rd and imm}
